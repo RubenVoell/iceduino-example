@@ -1,0 +1,144 @@
+# Buttons
+set_io sw1 122
+set_io sw2 124
+set_io sw3 125
+set_io sw4 128
+set_io sw5 129
+
+# Slider Switches
+set_io sw6 130
+set_io sw7 134
+
+# LEDs
+set_io led0 112
+set_io led1 113
+set_io led2 114
+set_io led3 115
+set_io led4 116
+set_io led5 117
+set_io led6 118
+set_io led7 119
+
+# Clock inputs. 12 MHz is only avaible, if debug USB is plugged in
+set_io clk_12mhz 21
+set_io clk_50mhz 52
+
+# UART(connected to the FTDIs second port
+set_io uart_rxd 62
+set_io uart_txd 60
+
+set_io uart_dtr_n 48
+set_io uart_dcd_n 49
+set_io uart_dsr_n 55
+set_io uart_cts_n 56
+set_io uart_rts_n 61
+
+# SPI
+set_io spi_clk 70
+set_io spi_miso 68
+set_io spi_mosi 67
+set_io spi_cs 71
+
+# PMOD
+set_io pmod_pwr_en 22
+
+# PMOD1
+set_io pmod1_p1 143
+set_io pmod1_p2 141
+set_io pmod1_p3 138
+set_io pmod1_p4 136
+set_io pmod1_p7 144
+set_io pmod1_p8 142
+set_io pmod1_p9 139
+set_io pmod1_p10 137
+
+# PMOD2
+set_io pmod2_p1 20
+set_io pmod2_p2 19
+set_io pmod2_p3 17
+set_io pmod2_p4 15
+set_io pmod2_p7 18
+set_io pmod2_p8 8
+set_io pmod2_p9 10
+set_io pmod2_p10 12
+
+# PMOD3
+set_io pmod3_p1 16
+set_io pmod3_p2 11
+set_io pmod3_p3 4
+set_io pmod3_p4 3
+set_io pmod3_p7 9
+set_io pmod3_p8 7
+set_io pmod3_p9 1
+set_io pmod3_p10 2
+
+# Arduino
+
+# As the Arduino signals are 5 V signal level, they are levelshifted.
+# We use bidirectional levelshifters, suitable for push-pull and
+# open-drain operation. The levelshifters can be disabled
+# using the oe0 or oe1 signal.
+
+# This group of signals is enabled by oe0
+set_io ino_oe0 39
+set_io ino_sck 24
+set_io ino_miso 25
+set_io ino_sda 26
+set_io ino_scl 28
+set_io ino_mosi 29
+set_io ino_ss 31
+set_io ino_d9 32
+set_io ino_d8 33
+
+# This group of signals is enabled by oe1
+set_io ino_oe1 34
+set_io ino_tx 37
+set_io ino_rx 38
+set_io ino_d2 41
+set_io ino_d3 42
+set_io ino_d4 43
+set_io ino_d5 44
+set_io ino_d6 45
+set_io ino_d7 47
+
+# ADCs I2C Bus. Open Drain only
+set_io adc_scl 120 
+set_io adc_sda 121
+
+# SRAM
+
+set_io sram_ce 110
+set_io sram_oe 87
+set_io sram_we 94
+
+set_io sram_a0 73
+set_io sram_a1 74
+set_io sram_a2 75
+set_io sram_a3 76
+set_io sram_a4 78
+set_io sram_a5 102
+set_io sram_a6 104
+set_io sram_a7 105
+
+set_io sram_a8 106
+set_io sram_a9 107
+set_io sram_a10 101
+set_io sram_a11 99
+set_io sram_a12 98
+set_io sram_a13 97
+set_io sram_a14 96
+set_io sram_a15 85
+
+set_io sram_a16 83
+set_io sram_a17 81
+set_io sram_a18 79
+
+set_io sram_d0 80
+set_io sram_d1 82
+set_io sram_d2 84
+set_io sram_d3 91
+set_io sram_d4 95
+set_io sram_d5 93
+set_io sram_d6 90
+set_io sram_d7 88
+
